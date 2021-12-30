@@ -27,7 +27,11 @@ npm install @prisma/client
 
 Dev dependencies
 
+npm install -D typescript @types/node @types/express prisma ts-node-dev
 
+Get tsconfig.json using
+
+npx typescript --init
 
 ~~~
 
