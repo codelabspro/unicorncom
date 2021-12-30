@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/codesdk/unicorncom/issues"
   },
-  "homepage": "https://github.com/codesdk/unicorncom#readme"
+  "homepage": "https://github.com/codesdk/unicorncom#readme",
+  "dependencies": {
+    "@prisma/client": "^3.7.0",
+    "express": "^4.17.2"
+  }
 }
