@@ -35,6 +35,13 @@ npx tsc --init
 
 ~~~
 
+
+## Prisma
+
+~~~
+npm install -D prisma
+~~~
+
 ## Postgres
 ~~~
 ==> psql postgres

@@ -1,5 +1,9 @@
-function main() {
-    console.log('Hello');
-}
+import express, { Request, Response } from 'express';
 
-main();
+const app = express();
+
+app.get('/', (req: Request, res: Response) => {
+    res.json({ message: 'Awesome Possum'});
+});
+
+app.listen(3001);
