@@ -4,6 +4,11 @@ import { PrismaClient } from '@prisma/client';
 const app = express();
 const prisma = new PrismaClient();
 
+app.get('/', (req: Request, res: Response) => {
+    const retVal = '<a href="/products">Unicorn Commerce API/</a>';
+    return res.send(retVal);
+});
+
 // get all products
 app.get('/products', async (req: Request, res: Response) => {
     const products = await prisma.product.findMany({
