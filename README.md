@@ -42,6 +42,55 @@ npx tsc --init
 npm install -D prisma
 
 npx prisma init
+
+Add connection string to .env
+
+
+DATABASE_URL="postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public"
+
+
+Create models in schema.prisma
+
+// products
+
+model Product {
+  id    String @id @default(cuid())
+  title String
+  desc  String
+  seller  User   @relation(fields: [userId], references: [id])
+  userId String
+}
+
+// user
+
+model User {
+  id        String    @id @default(cuid())
+  username  String
+  firstname String
+  lastname  String
+  products  Product[]
+
+}
+
+==> npx prisma migrate dev
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "unicorn_com_development", schema "public" at "localhost:5432"
+
+✔ Enter a name for the new migration: … init
+Applying migration `20211231070423_init`
+
+The following migration(s) have been created and applied from new schema changes:
+
+migrations/
+  └─ 20211231070423_init/
+    └─ migration.sql
+
+Your database is now in sync with your schema.
+
+✔ Generated Prisma Client (3.7.0 | library) to ./node_modules/@prisma/client in 82ms
+
 ~~~
 
 ## Postgres
