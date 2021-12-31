@@ -40,6 +40,8 @@ npx tsc --init
 
 ~~~
 npm install -D prisma
+
+npx prisma init
 ~~~
 
 ## Postgres
