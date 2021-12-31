@@ -91,6 +91,8 @@ Your database is now in sync with your schema.
 
 ✔ Generated Prisma Client (3.7.0 | library) to ./node_modules/@prisma/client in 82ms
 
+
+==> ==> npx prisma migrate dev
 ~~~
 
 ## Postgres
