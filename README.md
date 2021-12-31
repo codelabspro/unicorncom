@@ -31,7 +31,7 @@ npm install -D typescript @types/node @types/express prisma ts-node-dev
 
 Get tsconfig.json using
 
-npx typescript --init
+npx tsc --init
 
 ~~~
 
