@@ -35,6 +35,12 @@ npx tsc --init
 
 ~~~
 
+## Dev
+
+~~~
+npm run dev
+~~~
+
 
 ## Prisma
 
@@ -93,6 +99,8 @@ Your database is now in sync with your schema.
 
 
 ==> ==> npx prisma migrate dev
+
+==> npx prisma studio
 ~~~
 
 ## Postgres
